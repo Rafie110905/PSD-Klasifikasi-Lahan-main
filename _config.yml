@@ -3,6 +3,7 @@
 
 title: Klasifikasi Penggunaan/Penutupan Lahan Jawa Timur (Sentinel-2)
 author: Rafie110905
+copyright: 2026 Rafie110905
 logo: logo.png
 
 # File besar / mentah tidak ikut build (raster, model, data mentah) — hanya
