@@ -6,19 +6,19 @@
 
 <p>
 <img alt="Python" src="https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white">
-<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-Live_App-FF4B4B?logo=streamlit&logoColor=white">
+<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-Deploy_Required-FF4B4B?logo=streamlit&logoColor=white">
 <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white">
 <img alt="LightGBM" src="https://img.shields.io/badge/LightGBM-gradient_boosting-02569B">
 <img alt="GeoPandas" src="https://img.shields.io/badge/GeoPandas-geospatial-139C5A">
 <img alt="Jupyter Book" src="https://img.shields.io/badge/Jupyter_Book-docs-F37626?logo=jupyter&logoColor=white">
 </p>
 
-<a href="https://github.com/Rafie110905/PSD-Klasifikasi-Lahan-main/blob/main/app.py">
-  <img alt="Lihat kode aplikasi Streamlit" src="https://img.shields.io/badge/▶_Lihat_Kode_Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white">
+<a href="https://share.streamlit.io">
+  <img alt="Deploy aplikasi di Streamlit Community Cloud" src="https://img.shields.io/badge/▶_Deploy_Aplikasi_Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white">
 </a>
 &nbsp;
-<a href="https://github.com/Rafie110905/PSD-Klasifikasi-Lahan-main">
-  <img alt="Lihat sumber laporan Jupyter Book" src="https://img.shields.io/badge/📖_Sumber_Laporan_Jupyter_Book-4B8BBE?style=for-the-badge&logo=jupyter&logoColor=white">
+<a href="https://rafie110905.github.io/PSD-Klasifikasi-Lahan-main/intro.html">
+  <img alt="Buka laporan Jupyter Book" src="https://img.shields.io/badge/📖_Buka_Laporan_Jupyter_Book-4B8BBE?style=for-the-badge&logo=jupyter&logoColor=white">
 </a>
 
 </div>
@@ -164,8 +164,8 @@ karena itu peta dibuat dengan Random Forest (selisih kualitas masih dalam batas 
 
 | Bagian | Platform | Status |
 |:--|:--|:--:|
-| 🖥️ Dashboard | Streamlit | [**Lihat kode**](https://github.com/Rafie110905/PSD-Klasifikasi-Lahan-main/blob/main/app.py) |
-| 📖 Laporan | Jupyter Book | [**Lihat sumber di GitHub**](https://github.com/Rafie110905/PSD-Klasifikasi-Lahan-main) |
+| 🖥️ Dashboard | Streamlit Community Cloud | **Belum di-deploy** — [deploy aplikasi](https://share.streamlit.io) |
+| 📖 Laporan | GitHub Pages (Jupyter Book) | [**Buka laporan**](https://rafie110905.github.io/PSD-Klasifikasi-Lahan-main/intro.html) |
 
 Model besar (`pixel_rf.pkl`/`random_forest_best.pkl` ~0,5 GB, `pixel_et.pkl` ~1,3 GB) **tidak** ikut ke repo
 karena melebihi batas GitHub; aplikasi hanya membutuhkan `pixel_svm.pkl` (~1 MB). Lihat `deployment.md` untuk detail.

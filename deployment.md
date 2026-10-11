@@ -1,7 +1,8 @@
 # Deployment — Streamlit + Jupyter Book
 
 > **Status:** aplikasi Streamlit **belum di-deploy**. Halaman ini adalah petunjuk; klaim "sudah online"
-> hanya boleh diberikan setelah deploy berhasil dilakukan.
+hanya boleh diberikan setelah deploy berhasil dilakukan. Streamlit akan membuat URL untuk akun pemilik
+deployment; URL milik akun lain tidak dapat dipakai sebagai URL aplikasi Rafie110905.
 
 ## Aplikasi Streamlit (`app.py`)
 
@@ -23,10 +24,15 @@ App hanya membutuhkan `pixel_svm.pkl`; file lain hanya untuk reproducibility lok
 
 ### Langkah deploy (Streamlit Community Cloud)
 
-1. Push repo ke GitHub (pastikan `.gitignore`/LFS menangani file > 100 MB seperti di atas).
-2. Buka <https://share.streamlit.io> → **New app** → pilih repo, branch, `app.py` sebagai Main file path.
-3. Streamlit memakai `requirements.txt` otomatis; klik **Deploy**.
-4. Setelah sukses, bar URL-nya di sini (diisi setelah deploy — jangan mengklaim online sebelum ini).
+1. Pastikan semua berkas tabel CSV, gambar overlay, `outputs/models/pixel_svm.pkl`,
+   `outputs/models/metadata.json`, dan `data/boundary_jatim.geojson` sudah ada di repo GitHub.
+   Aplikasi tidak dapat dimulai jika `outputs/tables/` belum diunggah.
+2. Push repo ke GitHub (pastikan `.gitignore`/LFS menangani file > 100 MB seperti di atas).
+3. Buka <https://share.streamlit.io> → **New app** → pilih repo `Rafie110905/PSD-Klasifikasi-Lahan-main`,
+   branch `main`, dan `app.py` sebagai Main file path.
+4. Streamlit memakai `requirements.txt` otomatis; klik **Deploy**.
+5. Setelah sukses, cantumkan URL yang dibuat Streamlit untuk akunmu di README (jangan memakai URL
+   aplikasi milik akun lain atau mengklaim online sebelum deploy berhasil).
 
 ### Jalankan lokal
 
