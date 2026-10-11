@@ -13,12 +13,12 @@
 <img alt="Jupyter Book" src="https://img.shields.io/badge/Jupyter_Book-docs-F37626?logo=jupyter&logoColor=white">
 </p>
 
-<a href="https://rahardian-ananta-psd-klasifikasi-lahan-app-bs77za.streamlit.app/">
-  <img alt="Buka Aplikasi Streamlit" src="https://img.shields.io/badge/▶_Coba_Aplikasi_Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white">
+<a href="https://github.com/Rafie110905/PSD-Klasifikasi-Lahan-main/blob/main/app.py">
+  <img alt="Lihat kode aplikasi Streamlit" src="https://img.shields.io/badge/▶_Lihat_Kode_Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white">
 </a>
 &nbsp;
-<a href="https://rahardian-ananta.github.io/PSD-Klasifikasi-Lahan">
-  <img alt="Baca Jupyter Book" src="https://img.shields.io/badge/📖_Laporan_Jupyter_Book-4B8BBE?style=for-the-badge&logo=jupyter&logoColor=white">
+<a href="https://github.com/Rafie110905/PSD-Klasifikasi-Lahan-main">
+  <img alt="Lihat sumber laporan Jupyter Book" src="https://img.shields.io/badge/📖_Sumber_Laporan_Jupyter_Book-4B8BBE?style=for-the-badge&logo=jupyter&logoColor=white">
 </a>
 
 </div>
@@ -164,8 +164,8 @@ karena itu peta dibuat dengan Random Forest (selisih kualitas masih dalam batas 
 
 | Bagian | Platform | Status |
 |:--|:--|:--:|
-| 🖥️ Dashboard | Streamlit Community Cloud | [**Live**](https://rahardian-ananta-psd-klasifikasi-lahan-app-bs77za.streamlit.app/) |
-| 📖 Laporan | GitHub Pages (Jupyter Book) | [**Live**](https://rahardian-ananta.github.io/PSD-Klasifikasi-Lahan) |
+| 🖥️ Dashboard | Streamlit | [**Lihat kode**](https://github.com/Rafie110905/PSD-Klasifikasi-Lahan-main/blob/main/app.py) |
+| 📖 Laporan | Jupyter Book | [**Lihat sumber di GitHub**](https://github.com/Rafie110905/PSD-Klasifikasi-Lahan-main) |
 
 Model besar (`pixel_rf.pkl`/`random_forest_best.pkl` ~0,5 GB, `pixel_et.pkl` ~1,3 GB) **tidak** ikut ke repo
 karena melebihi batas GitHub; aplikasi hanya membutuhkan `pixel_svm.pkl` (~1 MB). Lihat `deployment.md` untuk detail.
@@ -176,6 +176,6 @@ karena melebihi batas GitHub; aplikasi hanya membutuhkan `pixel_svm.pkl` (~1 MB)
 
 **Dibuat dengan ❤️, ☕, dan banyak 🛰️** — proyek *Penambangan & Sains Data*.
 
-<sub>© 2026 Rahardian Ananta · Data: ESA Copernicus Sentinel-2</sub>
+<sub>© 2026 Rafie110905 · Data: ESA Copernicus Sentinel-2</sub>
 
 </div>
