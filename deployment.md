@@ -1,8 +1,7 @@
 # Deployment — Streamlit + Jupyter Book
 
-> **Status:** aplikasi Streamlit **belum di-deploy**. Halaman ini adalah petunjuk; klaim "sudah online"
-hanya boleh diberikan setelah deploy berhasil dilakukan. Streamlit akan membuat URL untuk akun pemilik
-deployment; URL milik akun lain tidak dapat dipakai sebagai URL aplikasi Rafie110905.
+> **Status:** aplikasi Streamlit sudah di-deploy: [buka dashboard](https://psd-klasifikasi-lahan-main-d32m2apyfjy9jndulj9eab.streamlit.app/).
+> URL ini dikelola lewat akun Streamlit pemilik deployment.
 
 ## Aplikasi Streamlit (`app.py`)
 
@@ -31,8 +30,7 @@ App hanya membutuhkan `pixel_svm.pkl`; file lain hanya untuk reproducibility lok
 3. Buka <https://share.streamlit.io> → **New app** → pilih repo `Rafie110905/PSD-Klasifikasi-Lahan-main`,
    branch `main`, dan `app.py` sebagai Main file path.
 4. Streamlit memakai `requirements.txt` otomatis; klik **Deploy**.
-5. Setelah sukses, cantumkan URL yang dibuat Streamlit untuk akunmu di README (jangan memakai URL
-   aplikasi milik akun lain atau mengklaim online sebelum deploy berhasil).
+5. Setelah sukses, cantumkan URL yang dibuat Streamlit untuk akunmu di README.
 
 ### Jalankan lokal
 
