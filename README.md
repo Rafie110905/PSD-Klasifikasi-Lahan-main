@@ -164,7 +164,7 @@ karena itu peta dibuat dengan Random Forest (selisih kualitas masih dalam batas 
 
 | Bagian | Platform | Status |
 |:--|:--|:--:|
-| 🖥️ Dashboard | Streamlit Community Cloud | **Belum di-deploy** — [deploy aplikasi](https://share.streamlit.io) |
+| 🖥️ Dashboard | Streamlit Community Cloud | **Belum di-deploy** — [deploy aplikasi](https://psd-klasifikasi-lahan-main-d32m2apyfjy9jndulj9eab.streamlit.app/) |
 | 📖 Laporan | GitHub Pages (Jupyter Book) | [**Buka laporan**](https://rafie110905.github.io/PSD-Klasifikasi-Lahan-main/intro.html) |
 
 Model besar (`pixel_rf.pkl`/`random_forest_best.pkl` ~0,5 GB, `pixel_et.pkl` ~1,3 GB) **tidak** ikut ke repo
