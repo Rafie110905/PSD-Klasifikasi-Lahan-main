@@ -1,30 +1,50 @@
-# Klasifikasi Penggunaan dan Penutupan Lahan Jawa Timur
+# Klasifikasi Spasial Tutupan Lahan Jawa Timur
 
-Laporan ini mendokumentasikan proyek klasifikasi tutupan lahan di Jawa Timur
-menggunakan citra satelit **Sentinel-2** dan metode *machine learning*. Proyek
-mencakup pemahaman masalah, pengolahan data, rekayasa fitur spektral,
-perbandingan model, evaluasi, serta penyajian hasil melalui peta dan dashboard.
+Laporan ini merangkum klasifikasi tutupan lahan Jawa Timur menggunakan citra
+**Sentinel-2A Level-2A** dan algoritma **K-Nearest Neighbors (KNN)**, mengikuti
+metode serta hasil pada PDF laporan proyek.
 
-## Hasil klasifikasi
+## Tujuan dan kelas
 
-Model mengelompokkan area menjadi enam kelas: **sawah**, **bangunan/permukiman**,
-**mangrove**, **lahan hijau**, **laut**, dan **danau**. Gambar berikut
-membandingkan citra RGB dengan hasil klasifikasi.
+Model mengklasifikasikan enam kelas: **Sawah**, **Bangunan**, **Hutan (lahan
+hijau)**, **Danau**, **Laut (perairan terbuka)**, dan **Mangrove**. Data citra
+diperoleh melalui CDSE openEO. Scene Classification Layer digunakan untuk
+menyaring awan, kemudian band spektral dan indeks **NDVI**, **NDWI**, **MNDWI**,
+serta **NDBI** digunakan sebagai fitur.
 
-```{figure} outputs/figures/rgb_vs_klasifikasi.png
----
-alt: Perbandingan citra RGB dan hasil klasifikasi penggunaan lahan
----
-Citra RGB dan hasil klasifikasi penggunaan/penutupan lahan.
-```
+## Pemodelan dan evaluasi
+
+Dataset laporan tersedia di `data/knn_pdf_reference/dataset.csv` dan berisi
+322.146 piksel dari 274 poligon sampel. Dataset dibagi
+stratified 80:20 pada tingkat piksel, fitur distandarisasi dengan
+`StandardScaler`, lalu model KNN dilatih dengan 5 tetangga, jarak Euclidean,
+dan uniform voting.
+
+Hasil data uji yang dilaporkan adalah akurasi **98,18%**, macro-F1 **0,944**,
+dan weighted-F1 **0,982**. Pada evaluasi poligon, 259 dari 268 poligon
+terklasifikasi benar (**96,6%**).
+
+Pembagian train/test pada laporan dilakukan per piksel. Piksel dari poligon
+yang sama dapat tersebar ke kedua bagian, sehingga skor tersebut perlu
+ditafsirkan sebagai evaluasi pada skema split yang dilaporkan, bukan sebagai
+jaminan performa pada lokasi yang sepenuhnya baru.
+
+## Dashboard
+
+Dashboard Streamlit yang sudah ada tidak diubah. Model dan visualisasi yang
+digunakan dashboard belum diselaraskan dengan laporan KNN ini; angka dan peta
+dashboard bukan keluaran eksperimen pada PDF.
+
+Dataset, raster regional, batas wilayah, hasil evaluasi, dan peta KNN dari
+repo sumber disimpan terpisah di [data/knn_pdf_reference/](data/knn_pdf_reference/).
+Model KNN terlatih tidak tersedia dari repo sumber.
 
 ## Jelajahi proyek
 
-- [Buka dashboard Streamlit](https://psd-klasifikasi-lahan-main-d32m2apyfjy9jndulj9eab.streamlit.app/)
+- [Buka dashboard Streamlit](https://psd-klasifikasi-lahan-main-d32m2apyfjy9jndulj9eab.streamlit.app/) — versi yang sudah ada, belum diselaraskan dengan PDF.
 - [Lihat kode dan berkas proyek di GitHub](https://github.com/Rafie110905/PSD-Klasifikasi-Lahan-main)
 
-Gunakan daftar isi untuk membaca tahapan proyek secara berurutan, dari
-*Business Understanding* sampai WebGIS dan deployment.
+Gunakan daftar isi untuk melihat notebook dan deployment yang tersedia.
 
 ```{tableofcontents}
 ```

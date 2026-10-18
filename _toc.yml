@@ -27,6 +27,6 @@ parts:
   - caption: BAB 6 — WebGIS & Deployment
     chapters:
       - file: notebooks/06_webgis
-        title: 6. WebGIS (notebook + Streamlit)
+        title: 6. WebGIS dan Deployment (ringkasan PDF)
       - file: deployment
-        title: Deployment (Streamlit & Book)
+        title: Status Dashboard & Build Dokumentasi
