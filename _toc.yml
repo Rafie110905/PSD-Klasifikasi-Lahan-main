@@ -4,29 +4,11 @@
 format: jb-book
 root: intro
 parts:
-  - caption: BAB 1 — Business Understanding
+  - caption: Laporan Proyek
     chapters:
-      - file: notebooks/01_business_understanding
-        title: 1. Business Understanding
-  - caption: BAB 2 — Data Understanding
+      - file: laporan_knn
+        title: Klasifikasi Spasial — KNN & Sentinel-2A
+  - caption: Informasi Pendukung
     chapters:
-      - file: notebooks/02_data_understanding
-        title: 2. Data Understanding
-  - caption: BAB 3 — Data Preprocessing
-    chapters:
-      - file: notebooks/03_data_preprocessing
-        title: 3. Data Preprocessing
-  - caption: BAB 4 — Modeling
-    chapters:
-      - file: notebooks/04_modeling
-        title: 4. Modeling
-  - caption: BAB 5 — Evaluation
-    chapters:
-      - file: notebooks/05_evaluation
-        title: 5. Evaluation
-  - caption: BAB 6 — WebGIS & Deployment
-    chapters:
-      - file: notebooks/06_webgis
-        title: 6. WebGIS dan Deployment (ringkasan PDF)
       - file: deployment
-        title: Status Dashboard & Build Dokumentasi
+        title: Status Dashboard dan Build Dokumentasi
