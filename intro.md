@@ -1,21 +1,30 @@
-# Klasifikasi Spasial Tutupan Lahan Jawa Timur
+# Klasifikasi Penggunaan dan Penutupan Lahan Jawa Timur
 
-Laporan lengkap klasifikasi **K-Nearest Neighbors (KNN)** dengan citra
-Sentinel-2A tersedia di halaman berikut:
+Laporan ini mendokumentasikan proyek klasifikasi tutupan lahan di Jawa Timur
+menggunakan citra satelit **Sentinel-2** dan metode *machine learning*. Proyek
+mencakup pemahaman masalah, pengolahan data, rekayasa fitur spektral,
+perbandingan model, evaluasi, serta penyajian hasil melalui peta dan dashboard.
 
-**[Buka laporan utama: metode, evaluasi, dan peta](laporan_knn.md)**
+## Hasil klasifikasi
 
-Laporan merangkum data, sembilan fitur spektral, konfigurasi model, evaluasi
-piksel dan poligon, serta tautan peta interaktif. Dataset dan artefak sumber
-tersedia di [folder referensi KNN di GitHub](https://github.com/Rafie110905/PSD-Klasifikasi-Lahan-main/tree/main/data/knn_pdf_reference).
+Model mengelompokkan area menjadi enam kelas: **sawah**, **bangunan/permukiman**,
+**mangrove**, **lahan hijau**, **laut**, dan **danau**. Gambar berikut
+membandingkan citra RGB dengan hasil klasifikasi.
 
-> Dashboard Streamlit yang ada di repository ini tetap tidak diubah. Aset
-> dashboard saat ini belum disinkronkan dengan hasil KNN dalam laporan.
+```{figure} outputs/figures/rgb_vs_klasifikasi.png
+---
+alt: Perbandingan citra RGB dan hasil klasifikasi penggunaan lahan
+---
+Citra RGB dan hasil klasifikasi penggunaan/penutupan lahan.
+```
 
-## Jelajahi repository
+## Jelajahi proyek
 
-- [Buka dashboard Streamlit yang sudah ada](https://psd-klasifikasi-lahan-main-d32m2apyfjy9jndulj9eab.streamlit.app/)
-- [Lihat repository GitHub](https://github.com/Rafie110905/PSD-Klasifikasi-Lahan-main)
+- [Buka dashboard Streamlit](https://psd-klasifikasi-lahan-main-d32m2apyfjy9jndulj9eab.streamlit.app/)
+- [Lihat kode dan berkas proyek di GitHub](https://github.com/Rafie110905/PSD-Klasifikasi-Lahan-main)
+
+Gunakan daftar isi untuk membaca tahapan proyek secara berurutan, dari
+*Business Understanding* sampai WebGIS dan deployment.
 
 ```{tableofcontents}
 ```
